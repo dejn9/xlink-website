@@ -58,9 +58,7 @@
 }
 .whatDoesXLinkDo {
     //   background: linear-gradient(to bottom, rgba(7, 84, 138,.8) 50%,  rgba(7, 114, 186,.8) 100%);
-        p {
-            // color:rgba(255, 255, 255,.7);
-        }
+       
         a {
             color:black;
             margin-bottom: 15px;
@@ -79,14 +77,20 @@
 // SUPPORT
 
 .support {
-    
+    background: url('../images/support.png');
+    background-position: center;
+    background-repeat: no-repeat;
     form,a {
         min-width: 300px;
         min-height: 80px;
-        border:2px solid #0d6efd;
         border-radius: 5px;
+        background-color: white;
         padding:15px;
         margin:15px 0;
+        transition: all .5s ease-in-out;
+        &:hover {
+            background:rgba(255, 255, 255,.7);
+        }
     }
     form {
         label {
@@ -108,7 +112,7 @@
     background-repeat: no-repeat;
     .product {
         border:2px solid black;
-        background-color: transparent;
+        background-color: white;
         border-radius: 5px;
         padding:15px;
         min-width: 500px;
@@ -167,15 +171,15 @@
         border-radius: 5px;
         padding:15px;
         margin:15px auto;
-       
-
-       
+    
       
     }
 
     .price {
         padding:15px;
         border:1px solid #0d6efd;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
        
 
         .middle {
@@ -183,7 +187,6 @@
             border-right: 1px solid #0d6efd;
         }
         .left,.middle,.right {
-            width:33%;
             padding:15px;
         }
 
@@ -194,8 +197,6 @@
         padding:0 15px;
     }
 }
-
-
 
 
 // BUTTONS 

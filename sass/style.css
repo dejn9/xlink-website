@@ -116,13 +116,25 @@ i {
   background-color: #0B70B8;
 }
 
+.support {
+  background: url("../images/support.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .support form, .support a {
   min-width: 300px;
   min-height: 80px;
-  border: 2px solid #0d6efd;
   border-radius: 5px;
+  background-color: white;
   padding: 15px;
   margin: 15px 0;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.support form:hover, .support a:hover {
+  background: rgba(255, 255, 255, 0.7);
 }
 
 .support form label {
@@ -142,7 +154,7 @@ i {
 
 .products .product {
   border: 2px solid black;
-  background-color: transparent;
+  background-color: white;
   border-radius: 5px;
   padding: 15px;
   min-width: 500px;
@@ -204,6 +216,10 @@ i {
 .buyProducts .price {
   padding: 15px;
   border: 1px solid #0d6efd;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
 }
 
 .buyProducts .price .middle {
@@ -212,7 +228,6 @@ i {
 }
 
 .buyProducts .price .left, .buyProducts .price .middle, .buyProducts .price .right {
-  width: 33%;
   padding: 15px;
 }
 
