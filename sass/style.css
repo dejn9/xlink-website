@@ -72,10 +72,11 @@ i {
 }
 
 .carousel {
-  background-color: transparent;
-  border: 1px solid blue;
-  border-left: 0px;
-  border-right: 0px;
+  background: url("../images/carousel.png");
+  background-position: center;
+  border-top: 0.5px solid #07548a;
+  border-bottom: 0.5px solid #07548a;
+  background-size: cover;
 }
 
 .carousel .d-flex {
@@ -91,8 +92,24 @@ i {
   margin-left: 30px;
 }
 
-.whatDoesXLinkDo h2 {
-  color: #616161;
+.carousel ul li:last-child {
+  list-style-type: none;
+}
+
+.carousel a {
+  margin-left: -20px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.whatDoesXLinkDo a {
+  color: black;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.whatDoesXLinkDo a:hover {
+  text-decoration: underline;
 }
 
 .copyright {
@@ -117,8 +134,15 @@ i {
   padding: 5px 10px;
 }
 
+.products {
+  background: url("../images/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .products .product {
-  border: 2px solid #07548A;
+  border: 2px solid black;
+  background-color: transparent;
   border-radius: 5px;
   padding: 15px;
   min-width: 500px;
@@ -131,20 +155,8 @@ i {
   max-width: 250px;
 }
 
-.products .product a {
-  background-image: -webkit-gradient(linear, left top, right top, from(#07548A), color-stop(51%, #0d6efd), to(#07548A));
-  background-image: linear-gradient(to right, #07548A 0%, #0d6efd 51%, #07548A);
-  color: white;
-  padding: 5px 30px;
-  margin-top: 15px;
-  background-size: 200% auto;
-  border-radius: 5px;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-}
-
-.products .product a:hover {
-  background-position: right center;
+.products .wrap {
+  min-width: 155px;
 }
 
 .products ul {
@@ -208,5 +220,22 @@ i {
   border: 1px solid #0d6efd;
   margin-top: 15px;
   padding: 0 15px;
+}
+
+.animated__btn {
+  background-image: -webkit-gradient(linear, left top, right top, from(#07548A), color-stop(51%, #0d6efd), to(#07548A));
+  background-image: linear-gradient(to right, #07548A 0%, #0d6efd 51%, #07548A);
+  color: white;
+  padding: 5px 30px;
+  margin-top: 15px;
+  background-size: 200% auto;
+  border-radius: 5px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.animated__btn:hover {
+  background-position: right center;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
