@@ -1,0 +1,60 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+
+    &::before,
+    &::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: inherit;
+    }
+}
+
+input[type='search'] {
+
+    &::-webkit-search-decoration,
+    &::-webkit-search-cancel-button,
+    &::-webkit-search-results-button,
+    &::-webkit-search-results-decoration {
+        -webkit-appearance: none;
+    }
+}
+
+ol,
+ul {
+    list-style: none;
+    
+}
+
+
+a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    transition: all .3s ease-in-out;
+
+    &:hover,
+    &:link,
+    &:visited {
+        text-decoration: none;
+    }
+}
+
+input,
+button {
+    outline: none !important;
+    border: none;
+}
+
+i {
+    outline: none;
+}
+
+
+
+
