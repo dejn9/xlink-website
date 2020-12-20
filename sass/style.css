@@ -245,6 +245,12 @@ body {
   background: rgba(255, 255, 255, 0.7);
 }
 
+@media only screen and (max-width: 320px) {
+  .support form, .support a {
+    min-width: 250px;
+  }
+}
+
 .support form label {
   margin-bottom: 15px;
 }
@@ -325,6 +331,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 320px) {
+  .buyProducts__product {
+    min-width: 250px;
+  }
+}
+
 .buyProducts__product .bottom {
   background-color: #0772BA;
   border-radius: 5px;
@@ -380,15 +392,21 @@ body {
   }
 }
 
+@media only screen and (max-width: 320px) {
+  .buyProducts__product .top img {
+    max-width: 200px;
+  }
+}
+
 .buyProducts .price {
   padding: 15px;
   border: 2px solid #0d6efd;
   display: -ms-grid;
   display: grid;
-  background-color: white;
+  -ms-grid-columns: (33%)[3];
+      grid-template-columns: repeat(3, 33%);
+  background-color: rgba(255, 255, 255, 0.7);
   border-radius: 5px;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
 }
 
 .buyProducts .price .middle {
@@ -398,6 +416,13 @@ body {
 
 .buyProducts .price .left, .buyProducts .price .middle, .buyProducts .price .right {
   padding: 15px;
+}
+
+@media only screen and (max-width: 576px) {
+  .buyProducts .price .left, .buyProducts .price .middle, .buyProducts .price .right, .buyProducts .price {
+    padding: 5px;
+    font-size: 14px;
+  }
 }
 
 .buyProducts .buy__btn {

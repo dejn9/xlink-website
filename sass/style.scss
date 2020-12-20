@@ -177,6 +177,7 @@ body {
     background: url('../images/support.png');
     background-position: center;
     background-repeat: no-repeat;
+    
     form,a {
         min-width: 300px;
         min-height: 80px;
@@ -187,6 +188,9 @@ body {
         transition: all .5s ease-in-out;
         &:hover {
             background:rgba(255, 255, 255,.7);
+        }
+        @media only screen and (max-width:320px){
+            min-width:250px;
         }
     }
     form {
@@ -263,6 +267,9 @@ body {
             flex-direction: column;
             min-width:300px;
         }
+        @media only screen and (max-width:320px){
+            min-width:250px;
+        }
         .bottom {
             background-color: #0772BA;
             border-radius: 5px;
@@ -306,6 +313,9 @@ body {
                 @media only screen and (max-width:576px){
                     max-width:250px;
                 }
+                @media only screen and (max-width:320px){
+                    max-width:200px;
+                }
             }
         }
     }
@@ -314,10 +324,9 @@ body {
         padding:15px;
         border:2px solid #0d6efd;
         display: grid;
-        background-color: white;
+        grid-template-columns: repeat(3,33%);
+        background-color: rgba(255, 255, 255,.7);
         border-radius: 5px;
-        grid-template-columns: repeat(3,1fr);
-       
 
         .middle {
             border-left: 1px solid #0d6efd;
@@ -326,6 +335,16 @@ body {
         .left,.middle,.right {
             padding:15px;
         }
+
+        @media only screen and (max-width:576px){
+            .left,.middle,.right, & {
+                padding:5px;
+                font-size:14px;
+            }
+        }
+       
+
+       
 
     }
     .buy__btn {
