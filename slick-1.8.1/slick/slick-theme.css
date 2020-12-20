@@ -85,7 +85,14 @@
   right: -25px;
 }
 
-
+@media only screen and (max-width:576px){
+  .slick-prev {
+    left:20px;
+  }
+  .slick-next {
+    right:20px;
+  }
+}
 [dir="rtl"] .slick-next {
   left: -25px;
   right: auto;
