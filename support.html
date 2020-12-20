@@ -7,16 +7,49 @@
     <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.css">
     <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
     <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="hamburgers-master/dist/hamburgers.css">
     <link rel="stylesheet" href="sass/style.css">
     <title>Support</title>
 </head>
 <body>
+    <div class="sidepanel d-flex flex-column">
+        <ul class="header__links mt-5 align-self-center">
+            <li>
+                <a href="#" class='d-flex align-items-center flex-column active'>
+                    <i class="fas fa-home text-white"></i>
+                    <p class='text-white'>Home</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class='d-flex align-items-center flex-column'>
+                    <i class="fas fa-dolly text-white"></i>
+                    <p class='text-white'>Products</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class='d-flex align-items-center flex-column'>
+                    <i class="fas fa-wrench text-white"></i>
+                    <p class='text-white'>Support</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class='d-flex align-items-center flex-column'>
+                    <i class="fas fa-cart-arrow-down text-white"></i>
+                    <p class='text-white'>Buy now</p>
+                </a>
+            </li>
+        </ul>
+        <div class="header__poweredBy d-flex flex-column align-items-end">
+            <p class='align-self-end pr-2'>Powered by:</p>
+            <img src="images/XLink-Communications-Hubs.png" alt="">
+        </div>
+    </div>
     <header class='header border-bottom border-primary'>
         <div class="container d-flex justify-content-between align-items-center">
             <a href="#" class="header__logo">
                 <img src="images/213.png" alt="">
             </a>
-            <ul class="header__links d-flex justify-content-between align-self-end">
+            <ul class="header__links d-none d-md-flex justify-content-between align-self-end">
                 <li>
                     <a href="#" class='header__link d-flex align-items-center flex-column active'>
                         <i class="fas fa-home text-white"></i>
@@ -42,12 +75,17 @@
                     </a>
                 </li>
             </ul>
-            <div class="header__poweredBy d-flex flex-column align-items-center">
+            <div class="header__poweredBy d-none d-md-flex flex-column align-items-center">
                 <p>Powered by:</p>
-                <img src="images/XLink-Communications-Hubs.jpg" alt="">
+                <img src="images/XLink-Communications-Hubs.png" alt="">
             </div>
+            <button class="hamburger d-block d-md-none hamburger--squeeze" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
         </div>
-        
+
 
     </header>
     
@@ -85,6 +123,6 @@
     <div class="copyright">
         <p class='text-center text-white'>Copyright © 2000 myXlink. All rights reserved.</p>
     </div>
-    
+    <script src="js/hamburger.js"></script>
 </body>
 </html>
