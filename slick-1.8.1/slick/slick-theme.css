@@ -57,7 +57,7 @@
   font-family: "slick";
   font-size: 20px;
   line-height: 1;
-  color: black;
+  color: white;
   opacity: 0.75;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -65,7 +65,6 @@
 
 .slick-prev {
   left: -25px;
-  
 }
 
 [dir="rtl"] .slick-prev {
@@ -85,14 +84,6 @@
   right: -25px;
 }
 
-@media only screen and (max-width:576px){
-  .slick-prev {
-    left:20px;
-  }
-  .slick-next {
-    right:20px;
-  }
-}
 [dir="rtl"] .slick-next {
   left: -25px;
   right: auto;

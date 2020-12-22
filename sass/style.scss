@@ -298,6 +298,10 @@ body {
         margin-bottom: 30px;
     }
 
+    img {
+        max-width: 250px;
+    }
+
 }
 
 .buyProducts {
@@ -311,14 +315,22 @@ body {
         background-color: rgba(255, 255, 255, .7);
         padding: 15px;
         margin: 15px auto;
+        min-height: 400px;
+        
 
         @media only screen and (max-width:992px) {
             flex-direction: column;
             min-width: 300px;
+            min-height: 500px;
+            max-height: 500px;
+        }
+        @media only screen and (max-width:576px){
+            min-height: 550px;
         }
 
         @media only screen and (max-width:320px) {
             min-width: 250px;
+            min-height: 450px;
         }
 
         .bottom {

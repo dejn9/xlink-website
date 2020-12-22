@@ -336,6 +336,10 @@ body {
   margin-bottom: 30px;
 }
 
+.store img {
+  max-width: 250px;
+}
+
 @media only screen and (max-width: 767px) {
   .buyProducts {
     width: 100% !important;
@@ -348,6 +352,7 @@ body {
   background-color: rgba(255, 255, 255, 0.7);
   padding: 15px;
   margin: 15px auto;
+  min-height: 400px;
 }
 
 @media only screen and (max-width: 992px) {
@@ -357,12 +362,21 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     min-width: 300px;
+    min-height: 500px;
+    max-height: 500px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .buyProducts__product {
+    min-height: 550px;
   }
 }
 
 @media only screen and (max-width: 320px) {
   .buyProducts__product {
     min-width: 250px;
+    min-height: 450px;
   }
 }
 
